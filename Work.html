@@ -1,0 +1,1246 @@
+<html>
+<head>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">-->
+<title>paintmywall.in</title>
+<style>
+
+  .bgcc{
+    position:fixed;
+    z-index:10;
+    overflow:visible;
+    background-color:rgb(43, 226, 119);
+    width:100%;
+    top:0%;
+    color:black;
+  }
+
+  .navbar{
+  position:fixed;
+  visibility: visible;
+  position: relative;
+  z-index:5;
+  color:white;
+  width:100%;
+  top:0%;
+}
+
+
+/*
+  .menu{
+    text-decoration: none;
+    padding:14px 26px;
+    color:white;
+    background-color: inherit;
+    border:none;
+    outline: none;
+    font-size:24px;
+  } 
+  
+  .menu:hover{
+    font-size:22px;
+  }
+
+*/
+  
+  .chk{
+    text-decoration: none;
+    border:none;
+    outline:none;
+    margin:0;
+    color:white;
+    background-color:inherit;
+    font-size:22px;
+    padding:14px 28px;
+    
+  }
+
+  .chk:hover{
+    font-size:20px;
+    padding:14px 31.45px;
+  }
+
+
+  .chk1{
+    text-decoration: none;
+    border:none;
+    outline:none;
+    margin:0;
+    color:white;
+    background-color:inherit;
+    font-size:22px;
+    padding:14px 28px;
+    
+  }
+
+  .chk1:hover{
+    font-size:20px;
+    padding:14px 31.45px;
+  }
+
+  .chk2{
+    text-decoration: none;
+    border:none;
+    outline:none;
+    margin:0;
+    color:white;
+    background-color:inherit;
+    font-size:22px;
+    padding:14px 28px;
+    
+  }
+
+  .chk2:hover{
+    font-size:20px;
+    padding:14px 31.45px;
+  }
+
+.drpdwn{
+  position:relative;
+  display:inline-block;
+}
+
+.drp-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  }
+
+  .drp-content a {
+  color: black;
+  font-size:18;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.drpdwn a:hover {background-color: #ddd;}
+
+
+  .show {
+    display: block;
+  }
+
+
+  .box{
+  height:30px;
+  width:100px;
+  border:1px solid black;
+  background-color: palevioletred;
+  font-size:18;
+  text-align:center;
+  color:white;
+  padding-top:10px;
+  margin-left:330px;
+}
+
+
+.box:hover{
+  background-color:blue;
+}
+
+.box1{
+  height:30px;
+  width:100px;
+  border:1px solid white;
+  font-size:18;
+  text-align:center;
+  color:white;
+  margin-left:530px;
+  margin-top:-42px;
+  padding-top:8px;
+}
+
+.box2{
+  height:30px;
+  width:100px;
+  border:1px solid black;
+  background-color: rgb(216, 14, 81);
+  font-size:16;
+  text-align:center;
+  color:white;
+  padding-top:10px;
+  margin-left:90px;
+  margin-top:35px;
+}
+
+.box2:hover{
+  background-color:#0040ff;
+}
+
+.box3{
+  height:30px;
+  width:100px;
+  border:1px solid black;
+  background-color: rgb(216, 14, 81);
+  font-size:16;
+  text-align:center;
+  color:white;
+  margin-top:30px;
+  padding-top:10px;
+  margin-left:90px;
+}
+
+.box3:hover{
+  background-color:#0040ff;
+}
+
+.box4{
+  height:30px;
+  width:100px;
+  border:1px solid black;
+  background-color: rgb(216, 14, 81);
+  font-size:16;
+  text-align:center;
+  color:white;
+  margin-top:40px;
+  margin-left:135px;
+  padding-top:10px;
+}
+
+.box4:hover{
+  background-color:#0040ff;
+}
+
+
+
+
+
+.ctydiv{
+  float:left;
+  visibility: visible;
+  cursor: pointer;
+  border-radius:50%;
+  height:145px;
+  width:145px;
+ 
+  background-color: rgb(15, 144, 219);
+  text-align: center;
+}
+
+
+.ctyovrlay{
+  float: left;
+  position:relative;
+  /*z-index:1;*/
+  display:block;
+  border-radius:50%;
+  height:145px;
+  width:145px;
+  opacity:0.6;
+  transition:transform 0.5s;
+  text-align:center;
+}
+
+.ctyovrlay:hover{
+opacity:1;
+ background-color:none;
+ transform:scale(0.90)
+ 
+}
+.ctytxt{
+  
+  
+  text-align: center;
+  
+  visibility:visible;
+  font-size:26px;
+  margin-top:96px;
+  color:white;
+  filter:brightness(150%);
+}
+
+.ctydiv2{
+  float:left;
+  visibility: visible;
+ 
+  cursor: pointer;
+  border-radius:50%;
+  height:145px;
+  width:145px;
+  margin-left: 75px;
+  background-color: blue;
+  
+  text-align: center;
+}
+
+.ctyovrlay2{
+  float: left;
+  position:relative;
+  z-index:1;
+  display:block;
+  border-radius:50%;
+  height:145px;
+  width:145px;
+  opacity:0.4;
+  background-image: url(Cities/Chennai.jpg);
+  transition:transform 0.5s;
+}
+
+.ctyovrlay2:hover{
+  opacity:1;
+ background-color:none;
+ transform:scale(0.90)
+ 
+}
+
+.ctytxt2{
+  margin-top:100px;
+  color:white;
+  text-align: center;
+  font-size:26;
+  visibility:visible;
+}
+
+
+
+.T1{
+  text-align: center;
+  float:left;
+  height:400px;
+width:300px;
+margin-left:100px;
+}
+
+.T2{
+  text-align: center;
+  height:400px;
+  width:300px;
+  margin-left:100px;
+  float:left;
+}
+
+.T3{
+  text-align: center;
+  float:right;
+  height:400px;
+  width:350px;
+  margin-right:100px;
+}
+
+.cntr {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.menu1{
+    padding:8px 14px;
+    color:black;
+    text-decoration:none;
+    font-size:24px;
+    border:none;
+    outline:none;
+    background-color:inherit;
+}
+
+.menu1:hover{
+  text-decoration:4px underline brown;
+  text-underline-offset:8px;
+}
+
+.mfix{
+  text-decoration:4px underline brown;
+  text-underline-offset:8px;
+}
+
+.eas{
+  padding:14px 26px;
+}
+
+.eas1{
+  padding:10px 14px;
+  margin-left:60px;
+} 
+
+#fext{
+  display:none;
+}
+ 
+#fint{
+  display:none;
+}
+
+#fstnl{
+  display:none;
+}
+
+#fdsg{
+  display:none;
+}
+
+#fcrl{
+  display:none;
+}
+
+.bgfix{
+  position:relative;
+  z-index:-2;
+  background-image:url(Form1.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  height:125%;
+  width:100%;
+  background-position:10px;
+  filter: blur(6px);
+}
+
+
+
+.formtxt{
+  position:relative;
+  z-index:-1;
+  float:right;
+  filter: blur();
+  background: rgb(0, 0, 0);
+  background-color:rgba(0,0,0,0.2);
+  right:0;
+  height:490px;
+  width:350px;
+  transform:translate(-140px,-650px);
+  padding:2%;
+  /*
+  margin-top:-650px;
+  margin-right:140px;
+  */
+  border:2px solid black;
+  color:white;
+}
+
+
+input[type=text]{
+  width:100%;
+  padding:6px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top:6px;
+  margin-bottom:14px;
+  position:inherit;
+}
+
+
+.T4{
+  float:left;
+  height:250px;
+  width:210px;
+  background-color: rgb(26, 163, 221);
+  margin-left:100px;
+  text-align: center;
+  font-size:30px;
+  border:5px solid white;
+  border-radius: 20%;
+}
+
+.T4:hover{
+  background-color: rgb(216, 14, 81);
+}
+
+.T5{
+  float:left;
+  height:250px;
+  width:210px;
+  background-color:rgb(26, 163, 221);
+  text-align: center;
+  margin-left:85px;
+  
+  border:5px solid white;
+  border-radius: 20%;
+}
+
+.T5:hover{
+  background-color: rgb(216, 14, 81);
+}
+
+.T6{
+  height:250px;
+  width:210px;
+  background-color: rgb(26, 163, 221);
+  text-align: center;
+  float:left;
+  margin-left:85px;
+  border:5px solid white;
+  border-radius: 20%;
+}
+
+.T6:hover{
+  background-color: rgb(216, 14, 81);
+}
+
+.T7{
+  height:250px;
+  width:210px;
+  background-color:rgb(26, 163, 221);
+  text-align: center;
+  float:right;
+  margin-right:100px;
+  border:5px solid white;
+  border-radius: 20%;
+}
+
+.T7:hover{
+  background-color: rgb(216, 14, 81);
+}
+
+.box5{
+  height:30px;
+  width:90px;
+  background-color:rgb(216, 14, 81);
+  text-align: center;
+  color:white;
+  padding-top:10px;
+  margin-top:-20px;
+}
+
+.cle{
+  margin-top:35px;
+  margin-left:5px;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  background-color: #e21374;
+}
+
+.cle:hover{
+  background-color:rgb(52, 40, 226);
+}
+
+
+
+.T8{
+  height:350px;
+  width:200px;
+  float:left;
+  margin-top:90px;
+  margin-left:60px;
+  color:white;
+}
+
+.T9{
+  float:left;
+  height:350px;
+  width:200px;
+  color:white;
+  margin-top:90px;
+  margin-left:60px;
+}
+
+
+.T10{
+  float:left;
+  height:350px;
+  width:150px;
+  color:white;
+  margin-top:90px;
+  margin-left:60px;
+}
+
+
+.T11{
+  float:left;
+  height:350px;
+  width:200px;
+  color:white;
+  margin-top:90px;
+  margin-left:60px;
+}
+
+.T12{
+  float:right;
+  margin-right:60px;
+  height:350px;
+  width:250px;
+  color:white;
+  margin-top:90px;
+}
+
+input[type=text1]{
+  width:100%;
+  padding:8px;
+  margin-top:15px;
+}
+
+input[type=submit]{
+  width:100%;
+  padding:8px;
+  margin-top:15px;
+  text-align: center;
+  color:white;
+  background-color: #be0c5f;
+}
+</style>
+
+</head>
+<body>
+<div style="background-image:url(work.jpg);width:100%;height:110%">
+  <div id="chgbg" class="navbar">
+
+    <div style="margin-left:130px;float:left;margin-top:20px;"><img src="logo.png" height="70px" margin-left="200px">
+    </div>
+   
+
+                     
+
+                     <!-- <div style="margin-left:250px;color:white;float:left;margin-top:20px;">
+
+                  <p style="font-size:26;"> PAINT </p>
+                  <p style="font-size:26;margin-top:-20px ;">MYWALLS.</p> <p style="border-radius:50%;background-color:white;height:10px;width:10px;
+                  font-size:8;color:black;float:left;margin-top:-40px;margin-left:137px;"> IN </P>
+                  <br>
+                  <P style="font-size:8;margin-top:-35px;"> GIVE YOUR WALLS A BEAUTIFUL MAKEOVER</P>
+                  </div> -->
+
+ <div style="font-size:24px;float:right;margin-top:-40px;margin-left:47.5%;">
+  <div class="drpdwn"> 
+    <button onclick="mfntn()" class="chk"> Services </button> 
+    <div id="jsdrp" class="drp-content"> 
+    <a href="">All Services</a>
+    <a href="">Interior Painting </a>
+    <a href="">Exterior Painting </a>
+    <a href="">Commercial Painting</a>
+  </div>
+  <script>
+  function mfntn(){
+    document.getElementById("jsdrp").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+  if (!e.target.matches('.chk')) {
+  var jsdrp = document.getElementById("jsdrp");
+    if (jsdrp.classList.contains('show')) {
+      jsdrp.classList.remove('show');
+    }
+  }
+  if(!e.target.matches('.chk1')){
+    var plst = document.getElementById("plst");
+    if(plst.classList.contains('show')){
+      plst.classList.remove('show');
+    }
+  }
+  /*if(!e.target.matches('.chk2')){  (note: if more dropdown to be hided onclick anywhere)
+  }*/
+}
+</script>
+</div>
+
+<div class="drpdwn">
+    <button onclick ="placelst()" class="chk1"> Pricing</button>
+    <div id="plst" class="drp-content">
+      <a href=""> Kayankulam </a>
+      <a href=""> Banglore </a>
+      <a href=""> Chennai </a>
+      <a href=""> Kolkata </a>
+    </div>
+  <script>
+  function placelst()
+  {
+    document.getElementById("plst").classList.toggle("show");
+    
+
+  }
+  </script>
+  </div>
+<!--</div>-->
+
+ <button class="chk2"> Explore </button> 
+ <button class="chk2"> BLog </button>
+ <button class="chk2"> Contact us </button> 
+</div> 
+</div>
+<script>
+  window.onscroll=function(){chgfn();rmvfn();}
+
+  function chgfn(){
+    if(document.body.scrollTop>65 || document.documentElement.scrollTop>65){
+      document.getElementById("chgbg").className="bgcc";
+    }
+    else{document.getElementById("chgbg").className="";
+  }
+}
+
+ function rmvfn(){
+  var position = 0;
+     var scPos = (this.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
+     position += scPos;
+     if(position > scPos) {
+    document.getElementById("jsdrp").classList.remove('show');
+    document.getElementById("plst").classList.remove('show');
+  } else {
+    document.getElementById("jsdrp").classList.remove('show');
+    document.getElementById("plst").classList.remove('show');
+  }
+}
+  
+</script>
+
+ <!--india-->
+ <div style="height:390px;width:70%;margin-top:220px;margin-left:220px;display:inline-block;text-align: center;">
+  <h2 style="color:white;font-size:72px;margin-top:20px;"> India's #1</h2> <br>
+   <h2 style="color:white;font-size:72px;margin-top:-95px;"> Painting Services </h2>
+
+  <p style="color:white;font-size:28px;margin-top:-38px;"> 
+    PaintMywalls brings you the best online painters! Professional Painting Service,</p>
+   <br> 
+   <p style="color:white;font-size:28px;margin-top:-45px;"> planned and executed well within your budget
+   </p>
+   
+<!--end of india-->
+
+
+<!-- Box-->
+<div class="box">   Book Now  </div>  
+<div float="right" class="box1">  Get Quote </div>
+<!-- end box-->
+</div>
+</div>
+
+
+<!-- SPACE-->
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--end space-->
+
+<!--scroll down-->
+<div>
+
+<hr style="border:5px solid black; width:20%;margin-top:25px;text-align:center;background-color:black;">
+
+<p style="color:black;font-size:48;text-align:center;">
+  All-in-one painting solutions
+  </p>
+  <!--end scroll dwn-->
+  
+<!--Boxes-->
+
+  <div class="T1">
+    <img src="All in one\Brush.jpg" width="150px" height="150px" class="cntr">
+    <h2 style="text-align:center;color:rgb(95, 105, 241);"> Interior Painting </h2>
+    <p style="text-align:center;font-size:18;"> Interior painting service includes Fresh painting and 
+      Re-painting with Stencil, Texture, and Designerwalls.</p>
+      <div class="box2" class="box2hover">  Book Now </div>
+  </div>
+  
+  <div class="T2"> 
+    <img src="All in one\House.jpg" width="150px" height="150px" class="cntr" > 
+    <h2 style="text-align:center;color:rgb(95, 105, 241);"> Exterior Painting</h2>
+    <p style="text-align:center;font-size:18;">Make your home weatherproof and exterior walls durable with 
+      professional exterior painting. </p>
+      <div class="box3" class="box3hover"> Book Now </div>   
+  </div>    
+
+  <div class="T3"><div>
+    <img src="All in one\Commercial.jpg" width="150px" height="150px" class="cntr">
+    <h2 style="text-align:center;color:rgb(95, 105, 241);"> Commercial Painting </h2>
+    <p style="text-align:center;font-size:18;">Transform spaces to suit your purpose and character, 
+      top rated commercial painting service</p></div>
+      <div class="box4" class="box4hover">   Book Now </div>
+  </div>
+
+<br>
+
+<div style="margin-top:460px;border-top:2px solid black;
+            border-bottom:2px solid black;background-color:lightblue;">
+
+
+  <p style="font-size:35px;text-align:center;margin-top:120px;font-family:Lucida Console;">
+       We are a team of professional wall<br>
+        painters in your locale catering to<br>
+        all your painting needs
+  </p>
+
+  <hr style="margin-top:60px;border:4px solid red;width:100px;background-color:red;">
+
+  <p style="font-size:25px;text-align:center;margin-top:70px;">
+      From a small-sized wall to large scale commercial painting, Paint My walls <br>
+      bring you the professional painting service, planned and administered well<br>
+       within your budget, yet a myriad of colors, shades and chic designs options<br>
+        to choose from.
+  </p>
+  </div>
+  </div>
+ 
+
+
+  
+  <div  style="height:380px;">
+    <hr style="border:2px solid #AA336A; width:15%;margin-top:40px;text-align:center;background-color:#AA336A;">
+    <h3 style="text-align:center;margin-top:20px;color:black;font-size:38px;"> Cities We Serve </h3>
+    <div style="margin-top:8%;height:200px;">
+      
+       
+    <div class="ctydiv" style="margin-left:190px;"> 
+      <div class="ctyovrlay" style="background-image:url(Cities/Bangalore.jpg);">
+        <p class="ctytxt"> <b> Bangalore </b> </p> </div>
+       </div>
+
+
+      <div class="ctydiv" style="margin-left:50px;">
+        <div class="ctyovrlay2" style="background-image:url(Cities/Chennai.jpg);"> 
+          <p class="ctytxt"> <b> Chennai </b> </p></div>
+      </div> 
+    
+      <div class="ctydiv" style="margin-left:50px;">
+        <div class="ctyovrlay2" style="background-image:url(Cities/Hydrabad.jpg);background-position: 40%;"> 
+          <p class="ctytxt"> <b> Hydrabad </b> </p></div>
+      </div> 
+ 
+      <div class="ctydiv" style="margin-left:50px;">
+        <div class="ctyovrlay2" style="background-image:url(Cities/Kerala.jpg);"> 
+          <p class="ctytxt"> <b> Kerala </b> </p></div>
+      </div> 
+ 
+      <div class="ctydiv" style="margin-left:50px;">
+        <div class="ctyovrlay2" style="background-image:url(Cities/Mumbai.jpg);"> 
+          <p class="ctytxt"> <b> Mumbai </b> </p></div>
+      </div> 
+
+    
+    </div> 
+    </div>  
+ 
+ <script>
+      
+      function rmvtxtfn(){
+         document.getElementById("txt").style.display ="none"
+      }
+  
+ </script>
+ 
+ 
+  
+  
+  
+    <div>
+    <hr style="border:2px solid #AA336A; width:15%;margin-top:40px;text-align:center;background-color:#AA336A;">
+    <h3 style="text-align:center;margin-top:20px;color:grey;font-size:38px;"> Recent Projects</h3>
+    <div style="margin-left:22%;height:35px;margin-top:-25px;">
+    <ul>
+   <button onclick="vryall();allfix()" class="menu1"> All </button>
+   <button onclick="vryext()" class="menu1"> Exterior </button>
+   <button onclick="vryint()" class="menu1"> Interior</button>
+   <button onclick="vrystnl()" class="menu1"> Stencil</button>
+   <button onclick="vrydsg()" class="menu1">DesignerWalls</button>
+   <button onclick="vrycrl()" class="menu1">Commercial</button>
+      </ul>
+    </div>
+
+  
+    <div id="fall" style="margin-left:80px;margin-top:70px;margin-right:60px;height:700px;">
+      <img class="eas" style="margin-left:30px;" src="Grouped/IMG 2.jpg" width="200px;" height="170px;" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 3.jpg"  height="170px"  width="280px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 1.jpg"  height="170" width="240px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 5.jpg" width="220px" height="170px;" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 4.jpg" width="300px" height="170px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 6.jpg" height="170px" width="240px"  data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 7.jpg"  width="300px" height="170" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 9.jpg"  height="170" width="285px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 10.jpg" width="220px" height="170px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible"> 
+      <img class="eas" src="Grouped/IMG 11.jpg" height="170px" width="240px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+      <img class="eas" src="Grouped/IMG 12.jpg"  height="170" width="220px" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+    </div>
+
+    <div id="fext" style="margin-left:200px;margin-top:70px;margin-right:120px;height:400px;">
+      <img class="eas" style="padding:10px 30px;" src="Grouped/IMG 1.jpg" height="170px" width="260px" data-prz-tilt="true"
+        data-prz-overflow="visible"
+        data-prz-tilt-x-amount="30"
+        data-prz-tilt-y-amount="20"
+        data-prz-overflow="visible">
+        <img class="eas" src="Grouped/IMG 4.jpg" width="300px" height="170px" data-prz-tilt="true"
+        data-prz-overflow="visible"
+        data-prz-tilt-x-amount="30"
+        data-prz-tilt-y-amount="20"
+        data-prz-overflow="visible">
+    </div>
+
+  <div id="fint" style="margin-left:120px;margin-top:70px;margin-right:120px;height:700px;">
+    <img class="eas" style="margin-left:30px;" src="Grouped/IMG 2.jpg" width="200px;" height="170px;" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas"  src="Grouped/IMG 3.jpg"  width="280px" height="170px" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 5.jpg" width="220px" height="170px;" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 11.jpg" height="170px" width="240px" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 6.jpg" height="170px" width="240px"  data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 7.jpg" width="300px" height="170" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 9.jpg" height="170" width="285px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 10.jpg" width="220px" height="170px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible"> 
+     <img class="eas" src="Grouped/IMG 12.jpg" height="170" width="220px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+  </div>
+
+  <div id="fstnl" style="margin-left:120px;margin-top:70px;margin-right:120px;height:400px;">
+     <img class="eas" src="Grouped/IMG 9.jpg" height="170" width="285px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 11.jpg" height="170px" width="240px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 12.jpg" height="170" width="220px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+  </div>
+
+  <div id="fdsg" style="margin-left:120px;margin-top:70px;margin-right:120px;height:600px;">
+    <img class="eas" src="Grouped/IMG 2.jpg" width="240px;" height="170px;" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 3.jpg" width="280px" height="170px" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible"> 
+    <img class="eas" src="Grouped/IMG 7.jpg" width="300px" height="170" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 9.jpg" height="170" width="285px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+     <img class="eas" src="Grouped/IMG 10.jpg" width="220px" height="170px" data-prz-tilt="true"
+     data-prz-overflow="visible"
+     data-prz-tilt-x-amount="30"
+     data-prz-tilt-y-amount="20"
+     data-prz-overflow="visible">
+  </div>
+
+  <div id="fcrl" style="margin-left:120px;margin-top:70px;margin-right:120px;height:400px;">
+    <img class="eas" src="Grouped/IMG 1.jpg" height="170px" width="260px" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 5.jpg" width="220px" height="170px;" data-prz-tilt="true"
+    data-prz-overflow="visible"
+    data-prz-tilt-x-amount="30"
+    data-prz-tilt-y-amount="20"
+    data-prz-overflow="visible">
+    <img class="eas" src="Grouped/IMG 4.jpg" width="300px" height="170" data-prz-tilt="true"
+      data-prz-overflow="visible"
+      data-prz-tilt-x-amount="30"
+      data-prz-tilt-y-amount="20"
+      data-prz-overflow="visible">
+  </div>
+  </div>
+  <script>
+
+    function vryall(){
+      document.getElementById("fall").style.display="block"
+      document.getElementById("fext").style.display="none"
+      document.getElementById("fint").style.display="none"
+      document.getElementById("fstnl").style.display="none"
+      document.getElementById("fdsg").style.display="none"
+      document.getElementById("fcrl").style.display="none"
+
+    }
+    
+    function vryext(){
+      var fall =document.getElementById("fall");
+      var fext =document.getElementById("fext");
+      fall.style.display = "none"
+      fint.style.display = "none"
+      fstnl.style.display = "none"
+      fdsg.style.display = "none"
+      fcrl.style.display = "none"
+      fext.style.display = "block"
+    }
+
+    function vryint(){
+      document.getElementById("fall").style.display="none"
+      document.getElementById("fext").style.display="none"
+      document.getElementById("fstnl").style.display="none"
+      document.getElementById("fdsg").style.display="none"
+      document.getElementById("fcrl").style.display="none"
+      document.getElementById("fint").style.display="block"
+    }
+
+    function vrystnl(){
+      document.getElementById("fall").style.display="none"
+      document.getElementById("fext").style.display="none"
+      document.getElementById("fint").style.display="none"
+      document.getElementById("fdsg").style.display="none"
+      document.getElementById("fcrl").style.display="none"
+      document.getElementById("fstnl").style.display="block"
+    }
+
+    function vrydsg(){
+      document.getElementById("fall").style.display="none"
+      document.getElementById("fext").style.display="none"
+      document.getElementById("fint").style.display="none"
+      document.getElementById("fstnl").style.display="none"
+      document.getElementById("fcrl").style.display="none"
+      document.getElementById("fdsg").style.display="block"
+    }
+
+    function vrycrl(){
+      document.getElementById("fall").style.display="none"
+      document.getElementById("fext").style.display="none"
+      document.getElementById("fint").style.display="none"
+      document.getElementById("fstnl").style.display="none"
+      document.getElementById("fdsg").style.display="none"
+      document.getElementById("fcrl").style.display="block"
+    }
+
+    /*function allfix(){
+      document.getElementById("fall").style.add("mfix")
+    }*/
+    
+  </script>
+
+  <script src="Img hover effect 1.js"></script>
+<script src="Img Hovr effect 2.js"></script>
+<script>
+  jQuery('img').parazoom();
+</script>
+   
+
+
+
+<!--form-->
+   <div class="bgfix"></div>
+   <div class="formtxt">
+     <h2 style="font-size:40;text-align:center;"> Book a free site visit</h2>
+    <form>
+    <label for="name" style="font-size:20px">Name:</label><br>
+    <input type="text" id="name">
+    <label for="phnno" style="font-size:20px">Phone Number:</label><br>
+    <input type="text" id="phnno">
+    <label for="mail" style="font-size:20px">Email:</label><br>
+    <input type="text" id="mail">
+    <label for="cty" style="font-size:20px">City:</label><br>
+    <input type="text" id="cty">
+    <button onclick="" style="margin-top:8px;margin-left:42.5%;padding:2% 4%;font-size:16px;">Submit</button>
+    </form>
+</div>
+
+<!-- Start set us apart-->
+
+<div style="display:inline-block;margin-top:-37%;padding-top:90px;height:500px;width:100%;background-color:rgb(26,163,221);">
+  <hr style="text-align:center;border:2px solid #AA336A;width:15%;margin-top:-10px;background-color:#AA336A;">
+  <h3 style="text-align:center;margin-top:50px;color:whitesmoke;font-size:56px;"> What Sets Us Apart?</h3>
+
+  <div class="T4" class="T4hover"> <p style="margin-top:40px;font-size:60px;color:white;"> $</p> <br>
+    <p style="margin-top:-32%;color:white;font-size:32px;"> Affordable <br> Pricing</p>
+    </div>
+<div class="T5" class="T5hover"> <img src="T5lgo.png" height="80px" style="padding-top:40px;">
+  <p style="color:white;font-size:32px;margin-top:25px;">Best Quality <br> Paints </p>
+ </div>
+
+ <div class="T6" class="T6hover">
+   <img src="T6lgo.png" height="80px;" style="padding-top:40px;">
+   <p style="color:white;font-size:32px;margin-top:25px;"> Trained <br> Professionals </p>
+ </div>
+
+ <div class="T7" class="T7hover">
+   <img src="T7lgo.jpg" height="90px;" style="padding-top:40px;">
+   <p style="color:white;font-size:32px;margin-top:20px;"> Hassle free <br> Experience </p>
+  </div>
+</div>
+
+<!--End set apart-->
+
+<div style="padding-top:150px;height:630px;">
+  <img src="Addlogo.png" style="margin-left:160px;float:left;">
+  <div style="float:right;height:300px;width:470px;margin-top:200px;margin-right:200px;">
+    <div class="cle" class="clehover">
+      </div>
+  <p style="color:rgb(73, 70, 70);font-size:36px;margin-top:20px;"> Looking for the <u> best</u> <u> painting</u> <br>
+    <u> services</u> for your next wall <br> painting project ?</p>
+    <div class="box5"> Call now
+    </div>
+</div>
+</div>
+
+
+
+<div id="eft" class="horizontal-scroll" style="height:3650px;">
+  <div class="example">
+    <img src="Effect/Eff1.jpg" height="300px" width="500px" style="margin-left:210%;">
+     
+  </div>
+  <div class="example">
+    <img src="Effect/Eff2.jpg" height="300px" width="500px" style="margin-left:2200px;">
+    
+  </div>
+ <div class="example">
+    <img src="Effect/Eff3.jpg" height="300px" width="500px" style="margin-left:1570px;">
+    
+  </div>
+  <div class="example">
+    <img src="Effect/Eff4.jpg" height="300px" width="500px" style="margin-left:950px;">
+    
+  </div>
+
+  <div class="example">
+    <img src="Effect/Eff5.jpg" height="300px" width="500px" style="margin-left:350px;">
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="hrzntl scroll.js"></script>
+
+<script>
+  $( document ).ready(function() {
+
+    $( '.horizontal-scroll' ).horizontalScroll({
+      containerHeight: "1000vh"
+    });
+
+  });
+</script>
+<!--
+  <img src="C:\Users\ABRAHAM\Desktop\New folder 6\Effect\Eff1.jpg" height="200px" width="300px">
+  <img src="C:\Users\ABRAHAM\Desktop\New folder 6\Effect\Eff2.jpg" height="200px" width="300px">
+  <img src="C:\Users\ABRAHAM\Desktop\New folder 6\Effect\Eff3.jpg" height="200px" width="300px">
+  <img src="C:\Users\ABRAHAM\Desktop\New folder 6\Effect\Eff4.jpg" height="200px" width="300px">
+  <img src="C:\Users\ABRAHAM\Desktop\New folder 6\Effect\Eff5.jpg" height="200px" width="300px">
+
+  </div> -->
+
+<div style="height:500px;background-color:rgb(36, 35, 35)">
+  <div class="T8">
+    <p style="font-size:22px;"> GET IN TOUCH  </p>
+    <p> 7676 024 024 </p>
+    <p>  9108 014 423 </p>
+    <p> support@paintmywalls.in </p>
+    <p> sales@paintmywalls.in </p>
+    </div>
+
+  <div class="T9">
+    <p style="font-size:22px;"> QUICK LINKS </p>
+    <p>  Book a Site Visit </p>
+    <p>  Interior Painting </p>
+    <p>  Exterior Painting </p>
+    <p>  Commercial Painting </p>
+    <p>  Asian Paint Pricing</p>
+  </div>
+
+  <div class="T10">
+    <p style="font-size:22px;">PRICING </p>
+    <p>  Bangalore</p>
+    <p>  Chennai</p>
+    <p>  Hyderabad</p>
+    <p>  Kolkata</p>
+    <p>  Kerala</p>
+    <p>  Mumbai</p>
+    <p>  Pune</p>
+  </div>
+  
+  <div class="T11">
+    <p style="font-size:22px;">EXPLORE</p>
+    <p>Ishta Collection</p>
+    <p>Warna Collection</p>
+    <p>Royale Play Texture</p>
+    <p>Nerolac Texture</p>
+    <p>Berger Express Painting</p>
+  </div>
+
+  <div class="T12">
+    <p style="font-size:22px;"> WEEKLY NEWSLETTER </p>
+    <form>
+    <input type="text1" id="name" placeholder="Name:"> 
+    <input type="text1" placeholder="Email:">
+    <input type="submit" value="SUBSCRIBE">
+    </form>
+  </div>
+
+</div>
+  
+  
+
+     
+
+    
